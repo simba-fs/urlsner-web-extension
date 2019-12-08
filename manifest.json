@@ -12,12 +12,15 @@
 		"js": ["popup/lib/jquery.js","popup/lib/clipboard.js","urlsner.js"]
 	}],
 	"permissions": [
-		"activeTab"
+		"activeTab",
+		"clipboardWrite",
+		"tabs"
 	],
 	"browser_action": {
 		"default_icon": "icons/icon-48.png",
 		"default_title": "Urlsner",
 		"default_popup": "popup/urlsner.html"
 	},
-	"content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+	"content_security_policy": "default-src 'self'"
+
 }
